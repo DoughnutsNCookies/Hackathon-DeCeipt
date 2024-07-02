@@ -8,11 +8,11 @@ const templateConfig = {
    * https://www.realtimecolors.com
    */
   colors: {
-    text: "#160909",
-    background: "#F9F1F1",
-    primary: "#B84949",
-    secondary: "#92D4B7",
-    accent: "#73A2C8",
+    text: "#222222",
+    background: "#FFFFFF",
+    primary: "#FF7700",
+    secondary: "#007BFF",
+    accent: "#003366",
     darkText: "#E8E8E8",
     darkBackground: "#242424",
     darkPrimary: "#C3AEAE",

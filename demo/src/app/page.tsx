@@ -1,110 +1,146 @@
-import Image from "next/image";
+"use client";
+import {
+  Card,
+  CardBody,
+  Image,
+  Button,
+  CardHeader,
+  CardFooter,
+  useDisclosure,
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
+  Spinner,
+} from "@nextui-org/react";
+import { useState } from "react";
+import { FaCompressAlt, FaExpandAlt } from "react-icons/fa";
+
+interface ModalFields {
+  header: string;
+  body: React.ReactNode;
+  cancel?: boolean;
+  close?: boolean;
+}
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between bg-background p-24 text-text">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [modalFields, setModalFields] = useState<ModalFields>({
+    header: "",
+    body: <></>,
+  });
+
+  const generateReceipt = () => {
+    setModalFields({
+      header: "Generating Receipt...",
+      body: (
+        <div className="flex flex-col gap-10">
+          <p>This process should only take a few seconds.</p>
+          <Spinner size="lg" label="Generating..." />
         </div>
-      </div>
+      ),
+      cancel: true,
+    });
+    onOpen();
 
-      <Image
-        className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-        src="/next.svg"
-        alt="Next.js Logo"
-        width={180}
-        height={37}
-        priority
-      />
+    setTimeout(() => {
+      setModalFields({
+        header: "Receipt Generated",
+        body: (
+          <div className="flex flex-col items-center gap-10">
+            <p>
+              Scan the QR Code below or tap our NFC to retrieve your receipt!
+            </p>
+            <Image src="/qr.svg" alt="QR Code" width={1000} />
+          </div>
+        ),
+        cancel: false,
+        close: true,
+      });
+    }, 3000);
+  };
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+  return (
+    <main className="flex flex-col items-center justify-center py-10">
+      <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
+        <ModalContent>
+          {(onClose) => (
+            <>
+              <ModalHeader className="flex flex-col gap-1">
+                {modalFields.header}
+              </ModalHeader>
+              <ModalBody className="flex flex-col gap-10">
+                {modalFields.body}
+              </ModalBody>
+              <ModalFooter>
+                {modalFields.cancel && (
+                  <Button color="danger" onPress={onClose}>
+                    Cancel
+                  </Button>
+                )}
+                {modalFields.close && (
+                  <Button color="primary" onPress={onClose}>
+                    Done
+                  </Button>
+                )}
+              </ModalFooter>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
+      <div className="flex flex-col gap-4 text-center">
+        <h1 className="text-4xl font-bold">
+          <span className="text-accent">De</span>
+          <span className="text-primary">Ceipt</span>
+        </h1>
+        <Card className="p-4">
+          <CardHeader className="text-2xl font-bold text-text">
+            Receipt Data
+          </CardHeader>
+          <CardBody className="overflow-visible py-2">
+            <table className="w-full text-text">
+              <tbody>
+                <tr>
+                  <td className="font-bold">Order ID</td>
+                  <td>50124</td>
+                </tr>
+                <tr>
+                  <td className="font-bold">Date</td>
+                  <td>2024-06-24</td>
+                </tr>
+                <tr>
+                  <td className="font-bold">Time</td>
+                  <td>20:26:12</td>
+                </tr>
+                <tr>
+                  <td className="font-bold">Amount</td>
+                  <td>RM 17.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </CardBody>
+        </Card>
+        <Card className="py-4">
+          <CardBody className={`py-2 ${isExpanded ? "" : "max-h-[50vh]"}`}>
+            <Image src="/receipt.jpeg" alt="Receipt" width={300} />
+          </CardBody>
+          <CardFooter className="mt-2">
+            <Button
+              fullWidth
+              color="secondary"
+              className="mx-4"
+              endContent={isExpanded ? <FaCompressAlt /> : <FaExpandAlt />}
+              onClick={() => setIsExpanded(!isExpanded)}
+            >
+              {isExpanded ? "Hide Receipt" : "Show Full Receipt"}
+            </Button>
+          </CardFooter>
+        </Card>
+        <Button fullWidth color="primary" size="lg" onClick={generateReceipt}>
+          Generate Receipt NFT
+        </Button>
       </div>
     </main>
   );
