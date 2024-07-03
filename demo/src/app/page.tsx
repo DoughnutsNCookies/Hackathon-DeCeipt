@@ -139,7 +139,7 @@ export default function Home() {
           </CardFooter>
         </Card>
         <Button fullWidth color="primary" size="lg" onClick={generateReceipt}>
-          Generate Receipt NFT
+          Generate Receipt
         </Button>
       </div>
     </main>
