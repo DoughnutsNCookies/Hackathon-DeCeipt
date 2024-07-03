@@ -104,19 +104,19 @@ export default function Home() {
               <tbody>
                 <tr>
                   <td className="font-bold">Order ID</td>
-                  <td>50124</td>
+                  <td>101003200011361</td>
                 </tr>
                 <tr>
                   <td className="font-bold">Date</td>
-                  <td>2024-06-24</td>
+                  <td>03/07/2024</td>
                 </tr>
                 <tr>
                   <td className="font-bold">Time</td>
-                  <td>20:26:12</td>
+                  <td>18:43:12</td>
                 </tr>
                 <tr>
                   <td className="font-bold">Amount</td>
-                  <td>RM 17.00</td>
+                  <td>RM 42.00</td>
                 </tr>
               </tbody>
             </table>
@@ -124,7 +124,7 @@ export default function Home() {
         </Card>
         <Card className="py-4">
           <CardBody className={`py-2 ${isExpanded ? "" : "max-h-[50vh]"}`}>
-            <Image src="/receipt.jpeg" alt="Receipt" width={300} />
+            <Image src="/receipt.jpg" alt="Receipt" width={300} />
           </CardBody>
           <CardFooter className="mt-2">
             <Button

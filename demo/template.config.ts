@@ -35,8 +35,7 @@ const templateConfig = {
    * https://metatags.io
    */
   metadata: {
-    title:
-      "NextJS Template | Skip the boring setup and start building instantly",
+    title: "DeCeipt | Earn while you collect receipts with Deceipt.",
     description:
       "NextJS Template is a starter template for NextJS projects to quickly bootstrap your project. Features include emails, authentication, database, and more.",
     keywords:
@@ -46,7 +45,7 @@ const templateConfig = {
     siteName: "NextJS Template",
     metaTagImage:
       "https://schuah-nextjs-mongodb.vercel.app/brand/metaTagImage.svg",
-    faviconImage: "https://schuah-nextjs-mongodb.vercel.app/brand/favicon.ico",
+    faviconImage: "http://localhost:3000/brand/favicon.ico",
     twitterHandle: "@NextJSTemplate",
     twitterCreator: "@DoughnutNCookie",
   },
