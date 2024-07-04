@@ -73,3 +73,5 @@ npm run dev
 
 * [@DoughnutsNCookies](https://www.github.com/DoughnutsNCookies)
 * [@nuyiep](https://www.github.com/nuyiep)
+
+>Participants of Make It Challenge 2024
