@@ -1,8 +1,8 @@
 ![Text Logo - White Background](https://github.com/DoughnutsNCookies/MakeItChallenge-Hackathon-DeCeipt/assets/53002130/acc6a17f-0afe-45ad-8f7a-639f0ba1d3d5)
-![iPhone 15 Pro](https://github.com/DoughnutsNCookies/MakeItChallenge-Hackathon-DeCeipt/assets/53002130/feb95421-3ddb-4d58-8685-41fb5e0b3001)
-
 
 ## What is DeCeipt?
+![iPhone 15 Pro (1)](https://github.com/DoughnutsNCookies/MakeItChallenge-Hackathon-DeCeipt/assets/53002130/60bbe30c-f259-4c1c-9696-cdb651793ca2)
+
 
 >DeCeipt is a tool that digitalizes receipts and allows users to earn money while collecting them.
 >
