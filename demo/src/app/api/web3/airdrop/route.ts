@@ -25,6 +25,7 @@ export async function GET() {
         error: txhash.message,
       }),
       {
+        status: 401,
         headers: {
           "Content-Type": "application/json",
         },
