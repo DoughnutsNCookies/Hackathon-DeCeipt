@@ -32,7 +32,9 @@ https://github.com/DoughnutsNCookies/MakeItChallenge-Hackathon-DeCeipt/assets/53
 <img src="readme/how-it-works.png" alt="DeCeipt workflow diagram">
 
 ## Summary
-DeCeipt revolutionizes receipt management by providing a digital, eco-friendly alternative to traditional paper receipts. Our solution leverages advanced technologies like blockchain, IPFS, and ZKP to ensure that receipts are securely stored, easily accessible, and only retrievable by authorized users. With DeCeipt, you don’t just save paper; you help save the planet, too.
+DeCeipt revolutionizes receipt management by providing a digital, eco-friendly alternative to traditional paper receipts. Our solution leverages advanced technologies like blockchain, IPFS, and ZKP to ensure that receipts are securely stored, easily accessible, and only retrievable by authorized users.
+
+>With DeCeipt, you don’t just save paper; you help save the planet, too.
 
 ## Building the project
 
