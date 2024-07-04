@@ -61,3 +61,8 @@ Optionally, you can run this project in developer mode using the `dev` option:
 ```sh
 npm run dev
 ```
+
+## Team
+
+* [@DoughnutsNCookies](https://www.github.com/DoughnutsNCookies)
+* [@nuyiep](https://www.github.com/nuyiep)
