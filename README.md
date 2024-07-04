@@ -1,5 +1,5 @@
 # MakeItChallenge-Hackathon-DeCeipt
-DeCeipt project for MakeItChallenge 2024
+DeCeipt project for Make It Challenge 2024
 
 Merchant Website Prototype: https://deceipt.aideyekit.com
 
