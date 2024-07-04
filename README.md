@@ -1,5 +1,12 @@
 ![Text Logo - White Background](https://github.com/DoughnutsNCookies/MakeItChallenge-Hackathon-DeCeipt/assets/53002130/acc6a17f-0afe-45ad-8f7a-639f0ba1d3d5)
 
+## What is DeCeipt?
+
+>DeCeipt is a tool that digitalizes receipts and allows users to earn money while collecting them.
+>
+>[YouTube Pitch Video](https://youtu.be/fSoxiQofaL8) <br>
+>[Product Demo Video](https://youtu.be/R0QJIhkbIaU)
+
 ## Merchant Dashboard Prototype
 >Try it out at https://deceipt.aideyekit.com
 
@@ -10,7 +17,7 @@ https://github.com/DoughnutsNCookies/MakeItChallenge-Hackathon-DeCeipt/assets/53
 
 https://github.com/DoughnutsNCookies/MakeItChallenge-Hackathon-DeCeipt/assets/53002130/2a6f94f8-47f7-4f8f-801f-8d984e606afd
 
-## How it works
+## How does it work
 
 ### Step 1: 🖨️ Virtual Printer Integration
 >When a receipt is required, DeCeipt acts as a virtual printer. Instead of printing a paper receipt, DeCeipt processes the receipt content digitally. This seamless integration makes DeCeipt appear as a regular printer to the point-of-sale (POS) system, ensuring easy adoption without changing existing workflows.
