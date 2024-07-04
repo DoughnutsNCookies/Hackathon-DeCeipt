@@ -1,11 +1,22 @@
 # MakeItChallenge-Hackathon-DeCeipt
 DeCeipt project for Make It Challenge 2024
+![Text Logo - White Background](https://github.com/DoughnutsNCookies/MakeItChallenge-Hackathon-DeCeipt/assets/53002130/acc6a17f-0afe-45ad-8f7a-639f0ba1d3d5)
 
-Merchant Website Prototype: <br>
-https://deceipt.aideyekit.com
 
-Figma Prototype: <br>
-https://www.figma.com/proto/eFYogAi0h763I8DtqhRqYK/DeCeipt?node-id=61-70&t=YmjiE2a5pVXmC9am-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=61%3A70
+### Merchant Website Prototype <br>
+Try it out at https://deceipt.aideyekit.com
+
+https://github.com/DoughnutsNCookies/MakeItChallenge-Hackathon-DeCeipt/assets/53002130/6258c37f-ab47-41cc-bc0e-ad1edb24c701
+
+
+
+### Figma Prototype <br>
+Try it out at https://www.figma.com/proto/eFYogAi0h763I8DtqhRqYK/DeCeipt?node-id=61-70&t=YmjiE2a5pVXmC9am-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=61%3A70
+
+
+https://github.com/DoughnutsNCookies/MakeItChallenge-Hackathon-DeCeipt/assets/53002130/2a6f94f8-47f7-4f8f-801f-8d984e606afd
+
+
 
 ## How it works
 
