@@ -47,29 +47,29 @@ DeCeipt revolutionizes receipt management by providing a digital, eco-friendly a
 
 Before building the project, you must install all the required dependencies. You can do so with `npm` by running the following command:
 
-"`sh
+```sh
 npm install
 ``` 
 
 To build the server, navigate to the `demo` folder and run the following command:
 
-"`sh
+```sh
 npm run build
 ```
 
 Once done, you can run the server with the following command:
 
-"`sh
+```sh
 npm run start
 ```
 
 Optionally, you can run this project in developer mode using the `dev` option:
 
-"`sh
+```sh
 npm run dev
 ```
 
-## Team
+## Team members
 
 * [@DoughnutsNCookies](https://www.github.com/DoughnutsNCookies)
 * [@nuyiep](https://www.github.com/nuyiep)
