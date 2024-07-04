@@ -1,22 +1,14 @@
-# MakeItChallenge-Hackathon-DeCeipt
-DeCeipt project for Make It Challenge 2024
 ![Text Logo - White Background](https://github.com/DoughnutsNCookies/MakeItChallenge-Hackathon-DeCeipt/assets/53002130/acc6a17f-0afe-45ad-8f7a-639f0ba1d3d5)
 
-
-## Merchant Website Prototype <br>
-Try it out at https://deceipt.aideyekit.com
+## Merchant Dashboard Prototype
+>Try it out at https://deceipt.aideyekit.com
 
 https://github.com/DoughnutsNCookies/MakeItChallenge-Hackathon-DeCeipt/assets/53002130/6258c37f-ab47-41cc-bc0e-ad1edb24c701
 
-
-
-## Figma Prototype <br>
-Try it out at https://www.figma.com/proto/eFYogAi0h763I8DtqhRqYK/DeCeipt?node-id=61-70&t=YmjiE2a5pVXmC9am-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=61%3A70
-
+## User dApp Prototype
+>Try out our [prototype](https://www.figma.com/proto/eFYogAi0h763I8DtqhRqYK/DeCeipt?node-id=61-70&t=YmjiE2a5pVXmC9am-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=61%3A70) too
 
 https://github.com/DoughnutsNCookies/MakeItChallenge-Hackathon-DeCeipt/assets/53002130/2a6f94f8-47f7-4f8f-801f-8d984e606afd
-
-
 
 ## How it works
 
@@ -34,8 +26,8 @@ https://github.com/DoughnutsNCookies/MakeItChallenge-Hackathon-DeCeipt/assets/53
 
 ### Step 5: 🔒 Data Retrieval with Zero Knowledge Proofs (ZKP)
 >DeCeipt employs Zero Knowledge Proofs (ZKP) to ensure the receipt data's privacy and security. ZKP allows data verification without revealing the data itself, ensuring that only the wallet owner can retrieve and view their receipt. This method maintains the confidentiality of the transaction details while providing verifiable proof of authenticity.
-### Step 6: 📱 User-Friendly App Interface
->DeCeipt offers an optional app with a simple user interface for added convenience. This app allows users to visualize and manage their receipts effortlessly. Users can view their transaction history, categorize expenses, and prepare for tax filings, all within a secure and intuitive platform.
+### Step 6: 📱 User-Friendly dApp Interface
+>DeCeipt offers an optional dApp with a simple user interface for added convenience. This dApp allows users to visualize and manage their receipts effortlessly. Users can view their transaction history, categorize expenses, and prepare for tax filings, all within a secure and intuitive platform.
 
 <img src="readme/how-it-works.png" alt="DeCeipt workflow diagram">
 
