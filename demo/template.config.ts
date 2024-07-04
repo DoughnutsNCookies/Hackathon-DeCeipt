@@ -44,7 +44,7 @@ const templateConfig = {
     url: "https://deceipt.aideyekit.com",
     siteName: "NextJS Template",
     metaTagImage: "https://deceipt.aideyekit.com/brand/metaTagImage.svg",
-    faviconImage: "http://deceipt.aideyekit.com/brand/favicon.ico",
+    faviconImage: "https://deceipt.aideyekit.com/brand/favicon.ico",
     twitterHandle: "@NextJSTemplate",
     twitterCreator: "@DoughnutNCookie",
   },
