@@ -41,11 +41,10 @@ const templateConfig = {
     keywords:
       "nextjs, template, starter, project, email, authentication, database",
     authors: [{ name: "Sean Chuah" }],
-    url: "https://schuah-nextjs-mongodb.vercel.app",
+    url: "https://deceipt.aideyekit.com",
     siteName: "NextJS Template",
-    metaTagImage:
-      "https://schuah-nextjs-mongodb.vercel.app/brand/metaTagImage.svg",
-    faviconImage: "http://localhost:3000/brand/favicon.ico",
+    metaTagImage: "https://deceipt.aideyekit.com/brand/metaTagImage.svg",
+    faviconImage: "http://deceipt.aideyekit.com/brand/favicon.ico",
     twitterHandle: "@NextJSTemplate",
     twitterCreator: "@DoughnutNCookie",
   },
