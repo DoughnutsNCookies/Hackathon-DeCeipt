@@ -12,6 +12,7 @@
   "dependencies": {
     "@nextui-org/react": "^2.4.2",
     "@prisma/client": "^5.15.0",
+    "@solana/web3.js": "^1.94.0",
     "@types/nodemailer": "^6.4.14",
     "framer-motion": "^11.2.10",
     "next": "14.2.2",
