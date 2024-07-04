@@ -30,3 +30,29 @@ https://www.figma.com/proto/eFYogAi0h763I8DtqhRqYK/DeCeipt?node-id=61-70&t=YmjiE
 
 ## Summary
 DeCeipt revolutionizes receipt management by providing a digital, eco-friendly alternative to traditional paper receipts. Our solution leverages advanced technologies like blockchain, IPFS, and ZKP to ensure that receipts are securely stored, easily accessible, and only retrievable by authorized users. With DeCeipt, you don’t just save paper; you help save the planet, too.
+
+## Building The Project
+
+Before building the project, you must install all the required dependencies. You can do so with `npm` by running the following command:
+
+```sh
+npm install
+``` 
+
+To build the server, navigate to the `demo` folder and run the following command:
+
+```sh
+npm run build
+```
+
+Once done, you can run the server with the following command:
+
+```sh
+npm run start
+```
+
+Optionally, you can run this project in developer mode using the `dev` option:
+
+```sh
+npm run dev
+```
