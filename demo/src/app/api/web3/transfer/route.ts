@@ -61,7 +61,7 @@ export async function POST(req: NextRequest) {
         }),
       );
       return await sendAndConfirmTransaction(connection, transaction, [from]);
-    } catch (e) {
+    } catch (e: any) {
       console.error(`Oops, something went wrong: ${e}`);
       return new Error(e);
     }

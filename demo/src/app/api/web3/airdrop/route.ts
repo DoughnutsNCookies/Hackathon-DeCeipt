@@ -12,7 +12,7 @@ export async function GET() {
         keypair.publicKey,
         2 * LAMPORTS_PER_SOL,
       );
-    } catch (e) {
+    } catch (e: any) {
       console.error(`Oops, something went wrong: ${e}`);
       return new Error(e);
     }
