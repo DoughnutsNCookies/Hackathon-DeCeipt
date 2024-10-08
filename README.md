@@ -6,7 +6,6 @@
 
 >DeCeipt is a tool that digitalizes receipts and allows users to earn money while collecting them.
 >
->[YouTube Pitch Video](https://youtu.be/fSoxiQofaL8) <br>
 >[Product Demo Video](https://youtu.be/R0QJIhkbIaU)
 
 ## Merchant Dashboard Prototype
